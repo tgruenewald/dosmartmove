@@ -1,67 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <style>
-
-
-    img.resize {
-  max-width:20%;
-  max-height:20%;
-  float: left;
-
-}
-img.resize2 {
-  max-width:20%;
-  max-height:20%;
-  float: right;
-
-}
-html body {
-    background-color: #F8F8F6;
-
-}
-
-  </style>
   <title>doSmartMove</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+
+  <style>
+      
+      
+        img.resize {
+        max-width:20%;
+        max-height:20%;
+        float: left;
+      
+      }
+      img.resize2 {
+        max-width:20%;
+        max-height:20%;
+        float: right;
+      
+      }
+      html body {
+          background-color: #F8F8F6;
+      
+      }
+      
+        </style>
+        <title>doSmartMove</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 </head>
-<body  jk>
+<body class="container">
+    <div class=" text-center">
+        <img class="resize" src="boxy.jpg"/>
+        <h1>doSmartMove</h1>
+      <img class="resize2" src="drivy.jpg"/>
+      </div>
 
-<div class=" text-center">
-  <img class="resize" src="boxy.jpg"/>
-  <h1>doSmartMove</h1>
-<img class="resize2" src="drivy.jpg"/>
-</div>
-  
-<div class="container">
-    <b>How it Works:</b>
-    
-     
-    
-    <ul>
-        <li> A smart contract is created between the shipper & the trucking service on the ETH Blockchain</li>
-    
-        <li> Once delivery has been completed. The Smart Contract is executed and funds are released to the trucking service</li>
-    
-    </ul>
-    
-    <b>Benefits:</b>
-    
-     <ul>
-        <li>Drivers can now maximize the unused space on their trucks.</li>
-        
-        <li>Smart Contracts are public and open to the terms. No middle can hide or change the terms.</li>
-        
-        <li>Truckers can now be paid in full once completed. No longer will they have to wait for Net Term to be paid.</li>
-     </ul>
-    
-
-</div>
-
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Candidate</th>
+          <th>Votes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>a</td>
+          <td id="a"></td>
+        </tr>
+        <tr>
+          <td>b</td>
+          <td id="b"></td>
+        </tr>
+        <tr>
+          <td>c</td>
+          <td id="c"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <input type="text" id="candidate" />
+  <a href="#" onclick="voteForCandidate()" class="btn btn-primary">Vote</a>
 </body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
 </html>
+
 
